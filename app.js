@@ -42,6 +42,7 @@ const checkRequestQueries = async (request, response, next) => {
     } else {
       response.status(400);
       response.send("Invalid Todo Category");
+      return;
     }
   }
 
@@ -53,6 +54,7 @@ const checkRequestQueries = async (request, response, next) => {
     } else {
       response.status(400);
       response.send("Invalid Todo Priority");
+      return;
     }
   }
 
@@ -64,6 +66,7 @@ const checkRequestQueries = async (request, response, next) => {
     } else {
       response.status(400);
       response.send("Invalid Todo Status");
+      return;
     }
   }
 
